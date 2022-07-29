@@ -1,23 +1,22 @@
-import logo from './logo.svg';
+
 import './App.css';
+import Cmp1 from './components/Cmp1';
+import Cmp2 from './components/Cmp2';
+import Cmp3 from './components/Cmp3';
+import { Resizable } from 'react-resizable';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='container'>
+    
+      <Cmp1/>
+      <Cmp2/>
+    
+    </div>
+    <div className='bottom'>
+      <Cmp3/>
+    </div>
     </div>
   );
 }
